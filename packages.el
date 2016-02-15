@@ -31,7 +31,17 @@
 
 (defconst js-custom-packages
   '(
+    flycheck
     js2-mode))
+
+(defun js-custom/pre-init-flycheck ()
+  (spacemacs|use-package-add-hook flycheck
+    :post-config
+    (progn
+      (flycheck-add-mode 'javascript-eslint 'js2-mode))))
+
+(defun js-custom/post-init-flycheck ()
+  (spacemacs/add-flycheck-hook 'react-mode-hook))
 
 (defun js-custom/init-js2-mode ()
   (use-package js2-mode
