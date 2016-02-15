@@ -53,15 +53,15 @@
       (add-hook 'js2-mode-hook 'js2-imenu-extras-mode))
     :config
     (progn
-      (spacemacs/set-leader-keys-for-major-mode 'js2-mode "w" 'js2-mode-toggle-warnings-and-errors)
+      (spacemacs/set-leader-keys-for-major-mode 'js2-jsx-mode "w" 'js2-mode-toggle-warnings-and-errors)
 
-      (spacemacs/declare-prefix-for-mode 'js2-mode "mz" "folding")
-      (spacemacs/set-leader-keys-for-major-mode 'js2-mode "zc" 'js2-mode-hide-element)
-      (spacemacs/set-leader-keys-for-major-mode 'js2-mode "zo" 'js2-mode-show-element)
-      (spacemacs/set-leader-keys-for-major-mode 'js2-mode "zr" 'js2-mode-show-all)
-      (spacemacs/set-leader-keys-for-major-mode 'js2-mode "ze" 'js2-mode-toggle-element)
-      (spacemacs/set-leader-keys-for-major-mode 'js2-mode "zF" 'js2-mode-toggle-hide-functions)
-      (spacemacs/set-leader-keys-for-major-mode 'js2-mode "zC" 'js2-mode-toggle-hide-comments))))
+      (spacemacs/declare-prefix-for-mode 'js2-jsx-mode "mz" "folding")
+      (spacemacs/set-leader-keys-for-major-mode 'js2-jsx-mode "zc" 'js2-mode-hide-element)
+      (spacemacs/set-leader-keys-for-major-mode 'js2-jsx-mode "zo" 'js2-mode-show-element)
+      (spacemacs/set-leader-keys-for-major-mode 'js2-jsx-mode "zr" 'js2-mode-show-all)
+      (spacemacs/set-leader-keys-for-major-mode 'js2-jsx-mode "ze" 'js2-mode-toggle-element)
+      (spacemacs/set-leader-keys-for-major-mode 'js2-jsx-mode "zF" 'js2-mode-toggle-hide-functions)
+      (spacemacs/set-leader-keys-for-major-mode 'js2-jsx-mode "zC" 'js2-mode-toggle-hide-comments))))
 
 
 ;;; packages.el ends here
